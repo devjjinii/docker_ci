@@ -12,7 +12,7 @@
 * docker run -it devjjinii/nodejs sh // shell 접근
     * #ls 
 * docker run -d -p 5000:8000 devjjinii/nodejs (-d : detach 모드)
-* 이미지 빌드하지 않고
+* 이미지 빌드하지 않고 볼륨 이용
     * volume : -v : 공유할 디렉토리 설정. -v "호스트 디렉토리":"컨테이너 디렉토리"
         * docker run -p 5000:8000 -v $(pwd):/workdir "이미지 아이디"
         * docker run -d -p 5000:8000 -v $(pwd):/usr/src/app devjjinii/nodejs
