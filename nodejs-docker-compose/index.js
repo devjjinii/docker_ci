@@ -7,14 +7,13 @@ const client = redis.createClient({
 })
 
 const app = express();
-
-client.set("number", 0);
-app.get('/', (req, res) => {
-    client.get("number", (err, number) => {
-        client.set("number", parseInt(number) + 1);
-        res.send(number);
-    })
-})
-
 app.listen(8000);
 console.log('Server Port : 8000')
+
+// client.set("number", 0);
+// app.get('/', (req, res) => {
+//     client.get("number", (err, number) => {
+//         client.set("number", parseInt(number) + 1);
+//         res.send(number);
+//     })
+// })
