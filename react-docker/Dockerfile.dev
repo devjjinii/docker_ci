@@ -1,0 +1,14 @@
+FROM node:alpine
+
+WORKDIR /usr/src/app
+
+# 소스만 바뀌면 다 install 할 필요 없다.
+COPY package.json ./ 
+
+RUN npm install
+
+# node_modules 중복 copy
+COPY ./ ./
+
+CMD ["npm", "run", "start"]
+

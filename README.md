@@ -22,3 +22,9 @@
 * docker-compose up // --build (재빌드)
 * docker-compose down
 * 백그라운드 실행 >  docker-compose up -d --build
+
+--- 
+## 개발환경과 운영환경의 도커파일
+
+* 도커파일을 명시해주어야 한다. > docker build -f Dockerfile.dev .
+* npx create-rect-app ./ (현재디렉토리)
