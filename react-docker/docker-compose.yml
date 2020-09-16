@@ -1,0 +1,12 @@
+version: "3"
+services:
+    react: # 컨테이너 이름
+        build: # 현 디렉토리에 있는 Dockerfile 사용
+            context: .
+            dockerfile: Dockerfile.dev
+        ports:
+         - "3000:3000"
+        volumes: 
+         - /usr/src/app/node_modules
+         - ./:/usr/src/app
+        stdin_open: true

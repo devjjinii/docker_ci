@@ -26,5 +26,7 @@
 --- 
 ## 개발환경과 운영환경의 도커파일
 
-* 도커파일을 명시해주어야 한다. > docker build -f Dockerfile.dev .
 * npx create-rect-app ./ (현재디렉토리)
+* 도커파일을 명시해주어야 한다. > docker build -f Dockerfile.dev -t devjjinii/docker-react ./
+    * docker run "-it" -p 3000:3000 devjjinii/docker-react 
+        * (-i -t : bash shell 사용 가능(컨테이너 실행되면서 컨테이너 안의 bash shell 실행))
