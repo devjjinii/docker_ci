@@ -31,3 +31,6 @@
     * docker run "-it" -p 3000:3000 devjjinii/docker-react 
         * (-i -t : bash shell 사용 가능(컨테이너 실행되면서 컨테이너 안의 bash shell 실행))
 * 테스트 : docker run -it devjjinii/docker-react npm run test
+
+* docker build .
+* nginx : docker run -p 8080:80 devjjinii/docker-react
