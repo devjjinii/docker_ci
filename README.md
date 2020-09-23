@@ -39,7 +39,7 @@
 ## aws 연동
 
 * elastic beanstalk -> 플랫폼 : Docker , Docker running on 64bit Amazon Linux
-* <img width="396" alt="스크린샷 2020-09-24 오전 12 15 48" src="https://user-images.githubusercontent.com/53853730/94032769-3ff71f00-fdfb-11ea-807b-c411b873a371.png">
-* <img width="834" alt="스크린샷 2020-09-24 오전 12 21 20" src="https://user-images.githubusercontent.com/53853730/94033484-f824c780-fdfb-11ea-8610-7363da67feb6.png">
+<img width="396" alt="스크린샷 2020-09-24 오전 12 15 48" src="https://user-images.githubusercontent.com/53853730/94032769-3ff71f00-fdfb-11ea-807b-c411b873a371.png">
+<img width="834" alt="스크린샷 2020-09-24 오전 12 21 20" src="https://user-images.githubusercontent.com/53853730/94033484-f824c780-fdfb-11ea-8610-7363da67feb6.png">
 
 * 로드 밸런서 >> EC2 인스턴스 ((도커 컨테이너((어플리케이션))))
