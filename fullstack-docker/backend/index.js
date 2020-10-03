@@ -11,10 +11,10 @@ app.use(express.json());
 
 
 // create table
-pool.query('CREATE TABLE tb_lists (id SERIAL PRIMARY KEY, value VARCHAR(400))',
-    (err,results) => {
-        console.log('results' , results)
-    })
+// pool.query('CREATE TABLE tb_lists (id SERIAL PRIMARY KEY, value VARCHAR(400))',
+//     (err,results) => {
+//         console.log('results' , results)
+//     })
 
 
 // db
@@ -24,7 +24,7 @@ app.get('/api/values', (req, res) => {
         if(err)
             return res.status(500).send(err)
         else
-            return res.json(results)
+            return res.json(results.rows)
     })
 })
 
